@@ -28,6 +28,8 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'mru.vim' " Most recent used
   Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' } " Elixir Syntax
   Plug 'nginx.vim' " Nginx Syntax
+  Plug 'rodjek/vim-puppet' " Puppet Syntax
+  Plug 'tpope/vim-rails'
 
 call plug#end()
 

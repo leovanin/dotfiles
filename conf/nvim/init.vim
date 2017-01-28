@@ -94,6 +94,16 @@ noremap <space> :set hlsearch! hlsearch?<cr>
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 
+" Split Navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" Natural view of navigations 
+set splitbelow
+set splitright
+
 " -------------------------------------------------- "
 " Plugin Configurations                              "
 " -------------------------------------------------- "
