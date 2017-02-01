@@ -1,6 +1,6 @@
 # Dalssaso's dotfiles
 
-# This is a work in progress :smile:
+## This is a work in progress :smile:
 
 * If you want to try it out make sure you do the following steps
 ```
@@ -13,3 +13,6 @@
   ln -s ~/.dotfiles/conf/nvim .
   vim +PlugInstall
 ```
+
+### Remember to check out the Documentation
+[Documentation](docs)

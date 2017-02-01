@@ -1,3 +1,4 @@
 conf/nvim/plugged
 conf/nvim/.backup/
 conf/nvim/.netrwhist
+**/*.old
