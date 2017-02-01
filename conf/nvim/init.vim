@@ -73,7 +73,10 @@ set mat=2                   " how many tenths of a second to blink
 let mapleader = ','
 
 " Save shortcut
-nmap <leader>, :w<cr>
+nmap <leader>, :w!<cr>
+
+" Quit faster
+map <leader>qq :q!<cr>
 
 " Set paste toggle
 set pastetoggle=<leader>v
@@ -93,12 +96,6 @@ noremap <space> :set hlsearch! hlsearch?<cr>
 " Scroll faster
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
-
-" Split Navigations
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
 
 " Natural view of navigations 
 set splitbelow
