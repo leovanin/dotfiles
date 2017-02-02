@@ -31,6 +31,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'rodjek/vim-puppet', { 'for': 'puppet' } " Puppet Syntax
   Plug 'tpope/vim-rails'
   Plug 'tpope/vim-markdown', { 'for': 'markdown' } " Markdown support
+  Plug 'godlygeek/tabular'
 
 call plug#end()
 
