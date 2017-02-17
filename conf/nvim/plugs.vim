@@ -32,6 +32,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-rails'
   Plug 'tpope/vim-markdown', { 'for': 'markdown' } " Markdown support
   Plug 'godlygeek/tabular'
+  Plug 'vim-scripts/groovy.vim'
 
 call plug#end()
 
