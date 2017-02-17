@@ -25,8 +25,7 @@ highlight SpecialKey ctermbg=none ctermfg=8
 highlight NonText ctermbg=none ctermfg=8
 
 set wrap                " Turn Line wrap on
-set wrapmargin=4        " Wrap lines when coming 4 characters from side
-set linebreak           " Soft line wrapping
+set wrapmargin=2        " Wrap lines when coming 4 characters from side
 
 set autoindent
 set smartindent
