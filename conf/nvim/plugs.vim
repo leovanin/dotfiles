@@ -33,6 +33,8 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-markdown', { 'for': 'markdown' } " Markdown support
   Plug 'godlygeek/tabular'
   Plug 'vim-scripts/groovy.vim'
+  Plug 'pearofducks/ansible-vim' " Ansible support
+  Plug 'tpope/vim-repeat'
 
 call plug#end()
 
