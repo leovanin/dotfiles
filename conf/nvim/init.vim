@@ -17,8 +17,11 @@ set directory=~/.config/nvim/.backup/
 " -------------------------------------------------- "
 syntax on
 set number
-set t_Co=256            " 256 Color Scheme
-colorscheme dracula     " Good colorscheme from https://github.com/dracula/vim
+"set t_Co=256            " 256 Color Scheme
+let base16colorspace=256
+colorscheme base16-material-dark     " Good colorscheme from https://github.com/dracula/vim
+set background=dark
+
 
 " Non-text and tabs hightlight fix
 highlight SpecialKey ctermbg=none ctermfg=8
@@ -53,6 +56,7 @@ set scrolloff=3             " lines of text around cursor
 set shell=$SHELL
 set cmdheight=1             " command bar height
 set laststatus=2            " show the satus line all the time
+let g:enable_bold_font = 1 " Enable bold font
 
 " Searching
 set ignorecase              " case insensitive searching
@@ -150,7 +154,7 @@ nmap <leader>ge :Gedit<cr>
 let g:airline_powerline_fonts=1
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='dracula'
+let g:airline_theme='hybrid'
 let g:airline#extensions#tabline#enabled = 1 " enable airline tabline
 let g:airline#extensions#tabline#tab_min_count = 2 " only show tabline if tabs are being used (more than 1 tab open)
 let g:airline#extensions#tabline#show_buffers = 0 " do not show open buffers in tabline
