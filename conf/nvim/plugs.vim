@@ -35,6 +35,8 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'vim-scripts/groovy.vim'
   Plug 'pearofducks/ansible-vim' " Ansible support
   Plug 'tpope/vim-repeat'
+  Plug 'fatih/vim-go', { 'for': 'go' }
+  Plug 'kristijanhusak/vim-hybrid-material'
 
 call plug#end()
 
