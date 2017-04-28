@@ -7,6 +7,8 @@ set nocompatible        " No VI allowed just VIM
 set autoread            " File change detection
 set history=1000        " Limit history to 1000
 set textwidth=120
+filetype on
+filetype plugin on
 
 set backupdir=~/.config/nvim/.backup/
 set directory=~/.config/nvim/.backup/
@@ -17,9 +19,9 @@ set directory=~/.config/nvim/.backup/
 " -------------------------------------------------- "
 syntax on
 set number
-"set t_Co=256            " 256 Color Scheme
-let base16colorspace=256
-colorscheme base16-material-dark     " Good colorscheme from https://github.com/dracula/vim
+set relativenumber
+set t_Co=256            " 256 Color Scheme
+colorscheme dracula
 set background=dark
 
 
@@ -27,8 +29,7 @@ set background=dark
 highlight SpecialKey ctermbg=none ctermfg=8
 highlight NonText ctermbg=none ctermfg=8
 
-set wrap                " Turn Line wrap on
-set wrapmargin=2        " Wrap lines when coming 4 characters from side
+set nowrap              " Turn Line wrap off
 
 set autoindent
 set smartindent
@@ -108,13 +109,16 @@ set splitright
 " Plugin Configurations                              "
 " -------------------------------------------------- "
 " Nerd Tree
-let g:NERDTreeWinPos = "right"
+let g:NERDTreeWinPos = "left"
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let g:NERDTreeWinSize=35
 map <leader>n :NERDTreeToggle<CR>
 map <leader>nb :NERDTreeFromBookmark
 map <leader>nf :NERDTreeFind<cr>
+
+" IndentLine
+let g:indentLine_setColors = 0
 
 " vim-go
 let g:go_highlight_functions = 1
@@ -154,7 +158,7 @@ nmap <leader>ge :Gedit<cr>
 let g:airline_powerline_fonts=1
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='hybrid'
+let g:airline_theme='dracula'
 let g:airline#extensions#tabline#enabled = 1 " enable airline tabline
 let g:airline#extensions#tabline#tab_min_count = 2 " only show tabline if tabs are being used (more than 1 tab open)
 let g:airline#extensions#tabline#show_buffers = 0 " do not show open buffers in tabline

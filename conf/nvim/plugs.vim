@@ -13,16 +13,16 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'vim-airline/vim-airline' " fancy statusline
   Plug 'vim-airline/vim-airline-themes' " themes for vim-airline
   Plug 'tpope/vim-fugitive' " Git wrapper for vim
-  Plug 'garbas/vim-snipmate' " Snippet Manager
+  " Plug 'garbas/vim-snipmate' " Snippet Manager
   Plug 'MarcWeber/vim-addon-mw-utils' " SnipMate Dependencie
   Plug 'tomtom/tlib_vim' " Snipmate Dependencie
-  Plug 'honza/vim-snippets' " SnipMate Dependencie
+  " Plug 'honza/vim-snippets' " SnipMate Dependencie
   Plug 'editorconfig/editorconfig-vim'
-  Plug 'ervandew/supertab' " Autocomplete
+  " Plug 'ervandew/supertab' " Autocomplete
   Plug 'AndrewRadev/splitjoin.vim' " single/multi line code handler: gS - split one line into multiple, gJ - combine multiple lines into one
   Plug 'elzr/vim-json', { 'for': 'json' } " JSON support
   Plug 'Shougo/vimproc.vim', { 'do': 'make' } " Asynchrounous lib for plugins in VIM
-  Plug 'vim-syntastic/syntastic' " Syntax checking
+  " Plug 'vim-syntastic/syntastic' " Syntax checking
   Plug 'airblade/vim-gitgutter' " GitGutter for Vim
   Plug 'honza/dockerfile.vim' " Dockerfile Syntax
   Plug 'mru.vim' " Most recent used
@@ -37,6 +37,17 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-repeat'
   Plug 'fatih/vim-go', { 'for': 'go' }
   Plug 'kristijanhusak/vim-hybrid-material'
+  Plug 'keith/rspec.vim'
+  Plug 'Yggdroot/indentLine' " Show indentation
+  " Deoplete Stuff :)
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Neo completion for NVIM
+  Plug 'Shougo/deol.nvim'
+  Plug 'Shougo/denite.nvim'
+  Plug 'Shougo/neomru.vim'
+  Plug 'Shougo/context_filetype.vim'
+  Plug 'zchee/deoplete-jedi' " Awesome Python Framework for completion and snippets for Deoplet
+
+
 
 call plug#end()
 
