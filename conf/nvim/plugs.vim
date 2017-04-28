@@ -46,6 +46,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'Shougo/neomru.vim'
   Plug 'Shougo/context_filetype.vim'
   Plug 'zchee/deoplete-jedi' " Awesome Python Framework for completion and snippets for Deoplet
+  Plug 'neomake/neomake'
 
 
 
