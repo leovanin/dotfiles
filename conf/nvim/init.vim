@@ -23,7 +23,7 @@ set relativenumber
 if (has("termguicolors"))
  set termguicolors
 endif
-colorscheme OceanicNext
+colorscheme dracula
 " set background=dark
 
 
@@ -79,10 +79,10 @@ set mat=2                   " how many tenths of a second to blink
 let mapleader = ','
 
 " Save shortcut
-nmap <leader>, :w!<cr>
+nmap <silent> <leader>, :w!<cr>
 
 " Quit faster
-map <leader>qq :q!<cr>
+map <silent> <leader>qq :q!<cr>
 
 " Set paste toggle
 set pastetoggle=<leader>v
@@ -97,7 +97,7 @@ map <leader>eg :e! ~/.gitconfig<cr>
 map <leader>ez :e! ~/.zshrc<cr>
 
 " Clear search highlight
-noremap <space> :set hlsearch! hlsearch?<cr>
+noremap <silent> <space> :set hlsearch! hlsearch?<cr>
 
 " Scroll faster
 nnoremap <C-e> 3<C-e>
@@ -156,13 +156,15 @@ nmap <silent> <leader>e :FZF<cr>
 
 " Fugitive
 nmap <silent> <leader>gs :Gstatus<cr>
-nmap <leader>ge :Gedit<cr>
+nmap <silent> <leader>ge :Gedit<cr>
+nmap <silent> <leader>gc :Gcommit<cr>
+nmap <silent> <leader>gp :Gpush<cr>
 
 " Airline
 let g:airline_powerline_fonts=1
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='oceanicnext'
+let g:airline_theme='dracula'
 let g:airline#extensions#tabline#enabled = 1 " enable airline tabline
 let g:airline#extensions#tabline#tab_min_count = 1 " only show tabline if tabs are being used (more than 1 tab open)
 let g:airline#extensions#tabline#show_buffers = 1 " do not show open buffers in tabline
