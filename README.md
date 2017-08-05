@@ -16,3 +16,7 @@
 
 ### Remember to check out the Documentation
 [Documentation](docs)
+
+
+# Links and Mentions
+* [@nicknisi](https://github.com/nicknisi) - ZSH Theme and most of the ideas :)
