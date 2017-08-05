@@ -20,9 +20,11 @@ set directory=~/.config/nvim/.backup/
 syntax on
 set number
 set relativenumber
-set t_Co=256            " 256 Color Scheme
-colorscheme dracula
-set background=dark
+if (has("termguicolors"))
+ set termguicolors
+endif
+colorscheme OceanicNext
+" set background=dark
 
 
 " Non-text and tabs hightlight fix
@@ -105,6 +107,13 @@ nnoremap <C-y> 3<C-y>
 set splitbelow
 set splitright
 
+nmap <leader>T :enew<CR> " Open a new empty buffer
+nmap <leader>l :bnext<CR> " Move to next buffer
+nmap <leader>h :bprevious<CR> " Move to previous buffer
+nmap <leader>bq :bp <BAR> bd #<CR> " Close the current buffer and move to previous one
+nmap <leader>bl :ls<CR> " List all buffers
+
+
 " -------------------------------------------------- "
 " Plugin Configurations                              "
 " -------------------------------------------------- "
@@ -129,7 +138,9 @@ autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " IndentLine
-let g:indentLine_setColors = 0
+" let g:indentLine_setColors = 0
+map <leader>ti :IndentLinesToggle<CR>
+let g:indentLine_enabled = 0
 
 " vim-go
 let g:go_highlight_functions = 1
@@ -139,24 +150,6 @@ let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
-" syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-" Python
-let g:syntastic_python_checkers=['pyflakes']
-
-" Javascript
-let g:syntastic_javascript_checkers = ['jshint']
-
-" Go
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
 
 " FZF
 nmap <silent> <leader>e :FZF<cr>
@@ -169,11 +162,15 @@ nmap <leader>ge :Gedit<cr>
 let g:airline_powerline_fonts=1
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='dracula'
+let g:airline_theme='oceanicnext'
 let g:airline#extensions#tabline#enabled = 1 " enable airline tabline
-let g:airline#extensions#tabline#tab_min_count = 2 " only show tabline if tabs are being used (more than 1 tab open)
-let g:airline#extensions#tabline#show_buffers = 0 " do not show open buffers in tabline
+let g:airline#extensions#tabline#tab_min_count = 1 " only show tabline if tabs are being used (more than 1 tab open)
+let g:airline#extensions#tabline#show_buffers = 1 " do not show open buffers in tabline
 let g:airline#extensions#tabline#show_splits = 0
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+" Remote Plugins NeoVim
+let g:loaded_python_provider = 1
 
 " Don't hide quotes in JSON files
 let g:vim_json_syntax_conceal = 0

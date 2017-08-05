@@ -2,13 +2,14 @@ call plug#begin('~/.config/nvim/plugged')
 
   " Colorscheme
   Plug 'dracula/vim'
+  Plug 'mhartington/oceanic-next'
 
   " General Utilities
   Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons'
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim' " Fuzzy Finder
   Plug 'jiangmiao/auto-pairs' " Auto closing for: parenthesis, brackets, quotes, etc...
   Plug 'tpope/vim-commentary' " Helper for commenting code
-  Plug 'tpope/vim-endwise' " Automatically adds 'end' in ruby code (chef too)
+  " Plug 'tpope/vim-endwise' " Automatically adds 'end' in ruby code (chef too)
   Plug 'tpope/vim-surround' " Key mapping for delete, change, add such surroundings in pairs, like quotes, etc...
   Plug 'vim-airline/vim-airline' " fancy statusline
   Plug 'vim-airline/vim-airline-themes' " themes for vim-airline
@@ -25,15 +26,12 @@ call plug#begin('~/.config/nvim/plugged')
   " Plug 'vim-syntastic/syntastic' " Syntax checking
   Plug 'airblade/vim-gitgutter' " GitGutter for Vim
   Plug 'honza/dockerfile.vim' " Dockerfile Syntax
-  Plug 'mru.vim' " Most recent used
   Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' } " Elixir Syntax
-  Plug 'nginx.vim' " Nginx Syntax
   Plug 'rodjek/vim-puppet', { 'for': 'puppet' } " Puppet Syntax
-  Plug 'tpope/vim-rails'
+  " Plug 'tpope/vim-rails'
   Plug 'tpope/vim-markdown', { 'for': 'markdown' } " Markdown support
   Plug 'godlygeek/tabular'
-  Plug 'vim-scripts/groovy.vim'
-  Plug 'pearofducks/ansible-vim' " Ansible support
+  " Plug 'vim-scripts/groovy.vim'
   Plug 'tpope/vim-repeat'
   Plug 'fatih/vim-go', { 'for': 'go' }
   Plug 'kristijanhusak/vim-hybrid-material'
@@ -47,6 +45,11 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'Shougo/context_filetype.vim'
   Plug 'zchee/deoplete-jedi' " Awesome Python Framework for completion and snippets for Deoplet
   Plug 'neomake/neomake'
+  Plug 'chase/vim-ansible-yaml' " Ansible Support
+  Plug 'Glench/Vim-Jinja2-Syntax' " Jinja2 Support
+  Plug 'rizzatti/dash.vim'
+  Plug 'chr4/nginx.vim' " Nginx Support
+  Plug 'hashivim/vim-terraform' " terraform support
 
 
 
