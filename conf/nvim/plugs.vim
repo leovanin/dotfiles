@@ -1,8 +1,9 @@
 call plug#begin('~/.config/nvim/plugged')
 
   " Colorscheme
-  Plug 'dracula/vim'
-  Plug 'mhartington/oceanic-next'
+  " Plug 'dracula/vim'
+  " Plug 'mhartington/oceanic-next'
+  Plug 'joshdick/onedark.vim'
 
   " General Utilities
   Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons'
