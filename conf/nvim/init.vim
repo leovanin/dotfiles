@@ -7,6 +7,7 @@ set nocompatible        " No VI allowed just VIM
 set autoread            " File change detection
 set history=1000        " Limit history to 1000
 set textwidth=120
+set clipboard=unnamed
 filetype on
 filetype plugin on
 

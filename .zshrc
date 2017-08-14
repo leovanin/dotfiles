@@ -49,7 +49,7 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose common-aliases)
+plugins=(git docker docker-compose common-aliases tmux tmuxinator)
 autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
@@ -76,6 +76,7 @@ alias vi='nvim'
 alias clear_dns='dscacheutil -flushcache'
 alias rretry='rm **/*.retry'
 alias ls='gls --group-directories-first --color'
+alias td='tmux detach'
 
 # PyENV Start
 eval "$(pyenv init -)"
