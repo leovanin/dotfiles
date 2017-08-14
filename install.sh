@@ -33,7 +33,7 @@ ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
 ln -s $HOME/.dotfiles/tmux/tmux.conf $HOME/.tmux.conf
 ln -s $HOME/.dotfiles/bin $HOME/.bin
 ln -s $HOME/.dotfiles/.config/nvim $HOME/.config/nvim
-cp -a $HOME/ssh/config $HOME/.ssh/config
+cp -a $HOME/.dotfiles/ssh/config $HOME/.ssh/config
 
 # Opening some files to be able to configure
 open $HOME/.dotfiles/font/SourceCodePro-Regular.ttf
