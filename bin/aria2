@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+CONCURRENT=$1
+FILE=$2
+
+
+aria2c -j ${CONCURRENT} --summary-interval=0 -c true -S true -i ${FILE}

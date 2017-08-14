@@ -1,0 +1,42 @@
+[user]
+	name = Henrique Dalssaso
+	email = henrique@dalssaso.com.br
+[github]
+	user = dalssaso
+[color]
+	ui = auto
+[color "branch"]
+	current = yellow bold
+	local = green bold
+	remote = cyan bold
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red bold
+[pager]
+	diff = diff-so-fancy | less --tabs=2 -RFX
+	show = diff-so-fancy | less --tabs=2 -RFX
+[credential]
+	helper = osxkeychain
+[merge]
+  branchdesc = true
+	log = true
+[alias]
+	a = add
+	p = pull
+	ps = push
+	branches = branch -a
+	tags = tag -a
+	remotes = remote -v
+	m = merge
+	cm = commit -m
+	cam = commit -am
+	s = status
+	ss = status -s
+  r = rebase

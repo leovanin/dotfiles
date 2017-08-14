@@ -1,0 +1,6 @@
+Host *
+  ServerAliveInterval 60
+  GSSAPIAuthentication yes
+  UseKeychain yes
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_rsa

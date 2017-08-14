@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+VAULT_FILE_PROJECT=$1
+rm $HOME/.vault/ansible
+ln -s $HOME/.vault/ansible_$VAULT_FILE_PROJECT $HOME/.vault/ansible
+
+echo "Vault file changed to: $VAULT_FILE_PROJECT"
