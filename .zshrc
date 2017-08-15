@@ -1,6 +1,7 @@
-export PATH=$PATH:$GOPATH/bin:$HOME/.bin:/usr/local/opt/postgresql@9.4/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/dalssaso/.bin:/usr/local/opt/postgresql@9.4/bin:/usr/local/opt/fzf/bin:/bin:/Users/dalssaso/.pyenv/bin:/usr/local/sbin
+
 # Path to your oh-my-zsh installation.
-  export ZSH=/Users/hdalssaso/.oh-my-zsh
+export ZSH=/Users/dalssaso/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -80,3 +81,4 @@ alias td='tmux detach'
 
 # PyENV Start
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

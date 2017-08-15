@@ -174,7 +174,9 @@ let g:airline#extensions#tabline#show_splits = 0
 let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Remote Plugins NeoVim
-let g:loaded_python_provider = 1
+let g:loaded_python_provider = 0
+let g:python_host_prog = '/Users/dalssaso/.pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = '/Users/dalssaso/.pyenv/versions/neovim3/bin/python'
 
 " Don't hide quotes in JSON files
 let g:vim_json_syntax_conceal = 0
