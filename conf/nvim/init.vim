@@ -180,3 +180,6 @@ let g:python3_host_prog = '/Users/dalssaso/.pyenv/versions/neovim3/bin/python'
 
 " Don't hide quotes in JSON files
 let g:vim_json_syntax_conceal = 0
+
+" Vim Commentary
+autocmd FileType terraform setlocal commentstring=#\ %s
