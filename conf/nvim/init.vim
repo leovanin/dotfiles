@@ -114,7 +114,16 @@ nmap <leader>l :bnext<CR> " Move to next buffer
 nmap <leader>h :bprevious<CR> " Move to previous buffer
 nmap <leader>bq :bp <BAR> bd #<CR> " Close the current buffer and move to previous one
 nmap <leader>bl :ls<CR> " List all buffers
-
+nmap <silent> <leader>1 :1b<CR> "Buffer 1"
+nmap <silent> <leader>2 :2b<CR> "Buffer 2"
+nmap <silent> <leader>3 :3b<CR> "Buffer 3"
+nmap <silent> <leader>4 :4b<CR> "Buffer 4"
+nmap <silent> <leader>5 :5b<CR> "Buffer 5"
+nmap <silent> <leader>6 :6b<CR> "Buffer 6"
+nmap <silent> <leader>7 :7b<CR> "Buffer 7"
+nmap <silent> <leader>8 :8b<CR> "Buffer 8"
+nmap <silent> <leader>9 :9b<CR> "Buffer 9"
+nmap <silent> <leader>0 :0b<CR> "Buffer 0"
 
 " -------------------------------------------------- "
 " Plugin Configurations                              "

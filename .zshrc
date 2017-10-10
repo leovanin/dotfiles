@@ -1,4 +1,4 @@
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/dalssaso/.bin:/usr/local/opt/postgresql@9.4/bin:/usr/local/opt/fzf/bin:/bin:/Users/dalssaso/.pyenv/bin:/usr/local/sbin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/dalssaso/.bin:/usr/local/opt/postgresql@9.4/bin:/usr/local/opt/fzf/bin:/bin:/Users/dalssaso/.pyenv/bin:/usr/local/sbin:$HOME/GoProjects/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/dalssaso/.oh-my-zsh
