@@ -16,7 +16,7 @@ brew tap homebrew/bundle
 # Install brews
 echo "Installing brews with Homebrew"
 cd ~/.dotfiles
-brew bundle
+bash bin/application_installer.sh
 
 # Install oh-my-zsh
 echo "Installing oh-my-zsh"
