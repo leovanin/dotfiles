@@ -82,3 +82,6 @@ alias td='tmux detach'
 # PyENV Start
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# Rbenv Start
+eval "$(rbenv init -)"
