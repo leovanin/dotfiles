@@ -90,13 +90,13 @@ map <silent> <leader>qq :q!<cr>
 set pastetoggle=<leader>v
 
 " Edit ~/.config/nvim/init.vim
-map <leader>ev :e! ~/.config/nvim/init.vim<cr>
+map <silent> <leader>ev :e! ~/.config/nvim/init.vim<cr>
 
 " Edit ~/.gitconfig
-map <leader>eg :e! ~/.gitconfig<cr>
+map <silent> <leader>eg :e! ~/.gitconfig<cr>
 
 " Edit .zshrc
-map <leader>ez :e! ~/.zshrc<cr>
+map <silent> <leader>ez :e! ~/.zshrc<cr>
 
 " Clear search highlight
 noremap <silent> <space> :set hlsearch! hlsearch?<cr>
@@ -105,15 +105,15 @@ noremap <silent> <space> :set hlsearch! hlsearch?<cr>
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 
-" Natural view of navigations 
+" Natural view of navigations
 set splitbelow
 set splitright
 
-nmap <leader>T :enew<CR> " Open a new empty buffer
-nmap <leader>l :bnext<CR> " Move to next buffer
-nmap <leader>h :bprevious<CR> " Move to previous buffer
-nmap <leader>bq :bp <BAR> bd #<CR> " Close the current buffer and move to previous one
-nmap <leader>bl :ls<CR> " List all buffers
+nmap <silent> <leader>T :enew<CR> " Open a new empty buffer
+nmap <silent> <leader>l :bnext<CR> " Move to next buffer
+nmap <silent> <leader>h :bprevious<CR> " Move to previous buffer
+nmap <silent> <leader>bq :bp <BAR> bd #<CR> " Close the current buffer and move to previous one
+nmap <silent> <leader>bl :ls<CR> " List all buffers
 nmap <silent> <leader>1 :1b<CR> "Buffer 1"
 nmap <silent> <leader>2 :2b<CR> "Buffer 2"
 nmap <silent> <leader>3 :3b<CR> "Buffer 3"
@@ -133,9 +133,9 @@ let g:NERDTreeWinPos = "left"
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let g:NERDTreeWinSize=35
-map <leader>n :NERDTreeToggle<CR>
-map <leader>nb :NERDTreeFromBookmark
-map <leader>nf :NERDTreeFind<cr>
+map <silent> <leader>n :NERDTreeToggle<CR>
+map <silent> <leader>nb :NERDTreeFromBookmark
+map <silent> <leader>nf :NERDTreeFind<cr>
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
@@ -150,7 +150,7 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " IndentLine
 " let g:indentLine_setColors = 0
-map <leader>ti :IndentLinesToggle<CR>
+map <silent> <leader>ti :IndentLinesToggle<CR>
 let g:indentLine_enabled = 0
 
 " vim-go
